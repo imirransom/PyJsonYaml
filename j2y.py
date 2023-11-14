@@ -1,11 +1,15 @@
 import json
 import yaml
 
-with open("donuts.json", 'r') as file:
-    donuts = json.load(file)
 
-with open("donuts.yaml", "w") as yaml_file:
-    yaml.dump(donuts, yaml_file)
+def json_to_yaml_converter(json_file):
+    with open(json_file, 'r') as file:
+        new_file = json.load(file)
 
-with open("donuts.yaml", "r") as yaml_file:
-    print(yaml_file.read())
+    with open("donuts.yaml", "w") as yaml_file:
+        yaml.dump(new_file, yaml_file)
+
+    with open("donuts.yaml", "r") as yaml_file:
+        print(yaml_file.read())
+
+json_to_yaml_converter("donuts.json")
