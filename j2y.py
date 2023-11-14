@@ -14,3 +14,4 @@ def json_to_yaml_converter(json_file):
 
 
 json_to_yaml_converter("donuts.json")
+json_to_yaml_converter("emojis.json")

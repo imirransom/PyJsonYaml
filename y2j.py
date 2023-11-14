@@ -9,3 +9,4 @@ def yaml_to_json_converter(yaml_file):
 
 
 yaml_to_json_converter("verify.yaml")
+yaml_to_json_converter("xmas.yaml")
